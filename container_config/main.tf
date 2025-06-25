@@ -12,7 +12,8 @@ provider "azurerm" {
   features {
 
   }
-  subscription_id = "75449c00-4ce4-4f05-9b99-eed70a7a19ff"
+  subscription_id = $(subscription_id)
+  tenant_id = $(tenant_id)
 }
 
 # creation of a resource group
